@@ -1,4 +1,3 @@
-// Load with --load-config examples/2.jsonc
 // Note that you must replace the image path to an existing image to display it.
 
 {
@@ -8,8 +7,14 @@
     },
     "modules": [
         {
+            "type": "title",
+            "key": "╭─",
+            "format": "{user-name}@{host-name}",
+            "keyColor": "green"
+        },
+        {
             "type": "host",
-            "key": "╭─󰌢",
+            "key": "├─󰌢",
             "keyColor": "green"
         },
         {
@@ -30,8 +35,18 @@
         "break",
 
         {
+            "type": "os",
+            "key": "╭─", // Just get your distro's logo off nerdfonts.com
+            "keyColor": "yellow"
+        },
+        {
+            "type": "kernel",
+            "key": "├─",
+            "keyColor": "yellow"
+        },
+        {
             "type": "shell",
-            "key": "╭─",
+            "key": "├─",
             "keyColor": "yellow"
         },
         {
@@ -39,16 +54,7 @@
             "key": "├─",
             "keyColor": "yellow"
         },
-        {
-            "type": "terminalfont",
-            "key": "├─",
-            "keyColor": "yellow"
-        },
-        {
-            "type": "lm",
-            "key": "├─󰧨",
-            "keyColor": "yellow"
-        },
+
         {
             "type": "de",
             "key": "├─",
@@ -56,37 +62,14 @@
         },
         {
             "type": "wm",
-            "key": "╰─",
+            "key": "├─",
             "keyColor": "yellow"
-        },
-
-        "break",
-
-        {
-            "type": "title",
-            "key": "╭─",
-            "format": "{user-name}@{host-name}",
-            "keyColor": "blue"
-        },
-        {
-            "type": "os",
-            "key": "├─{icon}", // Just get your distro's logo off nerdfonts.com
-            "keyColor": "blue"
-        },
-        {
-            "type": "kernel",
-            "key": "├─",
-            "keyColor": "blue"
         },
         {
             "type": "packages",
-            "key": "├─󰏖",
-            "keyColor": "blue"
+            "key": "╰─󰏖",
+            "keyColor": "yellow"
         },
-        {
-            "type": "locale",
-            "key": "╰─",
-            "keyColor": "blue"
-        }
+
     ]
 }
